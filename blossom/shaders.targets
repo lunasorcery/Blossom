@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Shaders Include="$(MSBuildProjectDirectory)\**\*.frag" />
+	</ItemGroup>
+ 
+	<Target Name="MinifyShaders" Inputs="@(Shaders)" Outputs="@(Shaders->'%(RootDir)%(Directory)frag_%(Filename).h')">
+ 		<Message Importance="High" Text="Minifying %(Shaders.FullPath)..." />
+ 		<Exec Command="shader_minifier-1.1.6.exe %(Shaders.FullPath) -o %(Shaders.RootDir)%(Shaders.Directory)frag_%(Shaders.Filename).h"/>
+ 	</Target>
+</Project>
