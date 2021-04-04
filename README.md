@@ -82,6 +82,13 @@ If enabled, uses a couple of risky tricks to shave a few bytes.
 ### REVISION_RULESET
 If enabled, sets up a party-safe configuration based on the [Revision](https://revision-party.net/competitions/graphics-competitions) rules.
 
+## As Seen In...
+* [Submit](https://demozoo.org/graphics/292417/) by yx
+* [Tesseract](https://demozoo.org/graphics/292406/) by Sinmix
+* [You Are Here](https://demozoo.org/graphics/292426/) by tdhooper
+
+...and [more](https://demozoo.org/productions/tagged/blossom/)!
+
 ## Special Thanks
 * LLB, for [Shader Minifier](https://github.com/laurentlb/Shader_Minifier)
 * Blueberry & Mentor, for [Crinkler](https://github.com/runestubbe/Crinkler)
