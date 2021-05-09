@@ -11,6 +11,9 @@ Blossom is built primarily with accumulative pathtracing in mind. There are two 
 
 In the example shaders provided, the alpha channel of the `draw` buffer is used to keep track of the sample count (by writing an additive `1.0` for each sample).
 
+## Requirements
+The solution currently requires at least Visual Studio 2017.
+
 ## Configurations
 
 ### Debug
