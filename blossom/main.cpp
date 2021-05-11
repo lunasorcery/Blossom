@@ -187,7 +187,9 @@ int WinMainCRTStartup()
 int main()
 #endif
 {
+#ifndef RENDER_EXACT_SAMPLES
 	unsigned int startTime = timeGetTime();
+#endif
 
 	DEVMODE screenSettings = {
 		{0}, 0, 0, sizeof(screenSettings), 0, DM_PELSWIDTH | DM_PELSHEIGHT,
