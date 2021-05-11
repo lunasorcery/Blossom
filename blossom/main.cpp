@@ -171,8 +171,10 @@ static inline void accumulatorRender(int sampleCount)
 	glUniform1i(kUniformFrame, sampleCount);
 	glRecti(-1, -1, 1, 1);
 
+#ifndef RENDER_EXACT_SAMPLES
 	// deliberately block so we don't queue up more work than we have time for
 	glFinish();
+#endif
 }
 
 static inline void presentRender(HDC hDC)
