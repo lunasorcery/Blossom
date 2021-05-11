@@ -160,7 +160,7 @@ static inline void presentSetup(int destFb)
 	glUseProgram(gShaderPresent);
 	glBindFramebuffer(GL_FRAMEBUFFER, destFb);
 
-	glDisable(GL_BLEND);
+	glBlendFunc(GL_ONE, GL_ZERO);
 
 	bindSharedUniforms();
 	glBindTexture(GL_TEXTURE_2D, fbAccumulator);
