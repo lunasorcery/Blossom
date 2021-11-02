@@ -1,5 +1,6 @@
 /* framework header */
 #version 430
+layout(location = 0) out vec4 FragColor;
 layout(location = 0) uniform vec4 iResolution;
 layout(location = 1) uniform int iFrame;
 
@@ -123,5 +124,5 @@ void main()
 		color = mix(color, vec3(light), fog);
 	}
 	  
-	gl_FragColor = vec4(color,1);
+	FragColor = vec4(color,1);
 }
