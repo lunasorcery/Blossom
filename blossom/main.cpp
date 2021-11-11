@@ -14,6 +14,7 @@
 // shaders
 #include "frag_draw.h"
 #undef VAR_IRESOLUTION
+#undef VAR_FRAGCOLOR
 #include "frag_present.h"
 
 // requirements for capture mode
