@@ -1,5 +1,6 @@
 /* framework header */
 #version 430
+layout(location = 0) out vec4 fragColor;
 layout(location = 0) uniform vec4 iResolution;
 layout(binding = 0) uniform sampler2D accumulatorTex;
 
@@ -20,5 +21,5 @@ void main()
 	//color = smoothstep(0.,1.,color.ggg);
 
 	// present for display
-	gl_FragColor = vec4(color,1);
+	fragColor = vec4(color,1);
 }
