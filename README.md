@@ -86,7 +86,7 @@ If enabled, uses a couple of risky tricks to shave a few bytes.
 If enabled, sets up a party-safe configuration based on the [Revision](https://revision-party.net/competitions/graphics-competitions) rules.
 
 ## As Seen In...
-* [Submit](https://demozoo.org/graphics/292417/) by yx
+* [Is This Your Card?](https://demozoo.org/graphics/307508/) by yx
 * [Tesseract](https://demozoo.org/graphics/292406/) by Sinmix
 * [You Are Here](https://demozoo.org/graphics/292426/) by tdhooper
 
