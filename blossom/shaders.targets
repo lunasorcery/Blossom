@@ -6,6 +6,6 @@
  
 	<Target Name="MinifyShaders" Inputs="@(Shaders)" Outputs="@(Shaders->'%(RootDir)%(Directory)frag_%(Filename).h')">
  		<Message Importance="High" Text="Minifying %(Shaders.FullPath)..." />
- 		<Exec Command="shader_minifier-1.1.6.exe %(Shaders.FullPath) -o %(Shaders.RootDir)%(Shaders.Directory)frag_%(Shaders.Filename).h"/>
+ 		<Exec Command="shader_minifier-1.3.6.exe %(Shaders.FullPath) -o %(Shaders.RootDir)%(Shaders.Directory)frag_%(Shaders.Filename).h"/>
  	</Target>
 </Project>
