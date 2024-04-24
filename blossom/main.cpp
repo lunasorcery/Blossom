@@ -309,7 +309,6 @@ int main()
 			}
 		}
 	}
-	delete[] cpuFramebufferFloat;
 
 	char name[256];
 	sprintf(name, "%llu_%dx%d_%dspp", time(NULL), kCanvasWidth, kCanvasHeight, RENDER_EXACT_SAMPLES);
@@ -355,6 +354,7 @@ int main()
 #endif
 
 	delete[] cpuFramebufferU8;
+	delete[] cpuFramebufferFloat;
 #else
 	presentSetup(0);
 	while (!GetAsyncKeyState(VK_ESCAPE))
